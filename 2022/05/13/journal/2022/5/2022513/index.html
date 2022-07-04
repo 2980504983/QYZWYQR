@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/QYZWYQR/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/QYZWYQR/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/QYZWYQR/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/QYZWYQR/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/QYZWYQR/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/QYZWYQR/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/QYZWYQR/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="2022&#x2F;5&#x2F;13天气: 雨地点: 幼专新的一天开始了, 吧pr看一看 十二点了,早上吧coco看完了, 下午开一个新的项目,两天之内完成, 有了信仰,就不会动摇, 虔诚的祈祷, 没有背叛, 没有烦躁, 现在的你才是你… 项目今天就是把大概步骤写了一下, 感觉很多单子都要用到数据分析, 所以python1000应该加快进度,今天就不在做项目了,再看一些python1000,争取在明天就把redis">
+<meta property="og:type" content="article">
+<meta property="og:title" content="QYZWYQR">
+<meta property="og:url" content="https://qyzwyqr.github.io/2022/05/13/journal/2022/5/2022513/index.html">
+<meta property="og:site_name" content="QYZWYQR">
+<meta property="og:description" content="2022&#x2F;5&#x2F;13天气: 雨地点: 幼专新的一天开始了, 吧pr看一看 十二点了,早上吧coco看完了, 下午开一个新的项目,两天之内完成, 有了信仰,就不会动摇, 虔诚的祈祷, 没有背叛, 没有烦躁, 现在的你才是你… 项目今天就是把大概步骤写了一下, 感觉很多单子都要用到数据分析, 所以python1000应该加快进度,今天就不在做项目了,再看一些python1000,争取在明天就把redis">
+<meta property="og:locale">
+<meta property="article:published_time" content="2022-05-12T23:40:31.565Z">
+<meta property="article:modified_time" content="2022-05-13T16:00:50.781Z">
+<meta property="article:author" content="QYZWYQR">
+<meta property="article:tag" content="journal">
+<meta name="twitter:card" content="summary">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://QYZWYQR.github.io/2022/05/13/journal/2022/5/2022513/"/>
+
+
+
+
+
+  <title> | QYZWYQR</title>
+  
+
+
+
+
+
+
+
+
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/QYZWYQR/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">QYZWYQR</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">8be4372830817dd89af207866df6db29</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/QYZWYQR/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/QYZWYQR/archives/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://QYZWYQR.github.io/QYZWYQR/2022/05/13/journal/2022/5/2022513/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/QYZWYQR/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="QYZWYQR">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline"></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2022-05-13T07:40:31+08:00">
+                2022-05-13
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="2022-5-13"><a href="#2022-5-13" class="headerlink" title="2022/5/13"></a>2022/5/13</h2><h3 id="天气-雨"><a href="#天气-雨" class="headerlink" title="天气: 雨"></a>天气: 雨</h3><h3 id="地点-幼专"><a href="#地点-幼专" class="headerlink" title="地点: 幼专"></a>地点: 幼专</h3><p>新的一天开始了, 吧pr看一看</p>
+<p>十二点了,早上吧coco看完了, 下午开一个新的项目,两天之内完成,</p>
+<p>有了信仰,就不会动摇, 虔诚的祈祷, 没有背叛, 没有烦躁, 现在的你才是你…</p>
+<p>项目今天就是把大概步骤写了一下, 感觉很多单子都要用到数据分析, 所以python1000应该加快进度,今天就不在做项目了,再看一些python1000,争取在明天就把redis看完, 以前的画友,给我发信息了,让我发现我已经有好久没画画了,暑假捡起来吧,加油</p>
+<p>刚刚, 学校里出了一个通知, 说是教考分离, 通知一出来, 金培键就过来说了:’’不能看coco了, 要教考分离了, 要准备期末考试, coco中的教育学和教育心理学的内容和考试的内容不一样, ‘’总之就是来通知我们不要再看教资视频了, 我们寝室徐坤和邓辉也附和了. 但是,当时听到, 我心里出来一股闷气, 我也知道这种生气来源于那, 来源于 我想让他们看教资视频, 但是他们不想看之间的矛盾. 但是, 人的情感只能压抑, 不能控制他的产生, 即使我清楚这样的生气没有意义,但他还是会作用在我身上,我只能引导自己去调解这种生气,(呵呵, 就是不想看教资视频罢了, 这个教考分离只不过是给了你一个不努力的借口罢了, 你们肯定不会认真复习, 顶多最后一天看看) 这是我当时的想法, 不过, 我清楚: 这个烦躁来源于, 我想让他们变得努力, 与他们的惰性之间的矛盾, 我的目的是什么? 是想让他们变得努力? 不, 但也不完全不是, 至少以后第五年,他们会感谢我, 我在他们心中的地位也会变高. 但这只是小部分, 更大的部分其实是我想通过让他们变得努力,来让自己变得更加努力, 让自己时刻清醒的认知教资的重要程度,因为,我害怕我考不到教资,我也清楚教资没考到的后果. 我们班整体的努力值，是比较低的，因此通过率估计也不会高，我通过组建教资群通过任务，提高整体努力值，我在在里面成为更努力的那个，我这样做的目的是因为，在一个团体中努力是可以活动快感的，但快感一般只有团体中最努力的几个才能享受到，我们班没有这种快感，或者说这种快感无法兑现，毕竟我不能整天和别人说我今天又看教资了，厉害吧。但是如果，我建了群，我就可以每天通过，发进度，等方式，告诉你们，我今天又看教资了。以此来获得更多，更稳定的快感，让我看起教资来不那么累。所以，为了以后看教资更加的有动力，更加的轻松，我并没有放弃催促他们，必须看教资，这样会让矛盾过于尖锐，以至于击碎这个团体，也没有放弃，而是等待，行，就听你们的，暑假再开始，反正时间还长，而在暑假，他们会因为玩的太多而想努力，教资就是一个宣泄口，他们愈发的努力，我教资的通过概率就会越高，并且，只要团体的控制权，还掌握在我手里，我看教资就不会那么艰难。</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/QYZWYQR/2022/05/12/journal/2022/5/2022512/" rel="next" title="">
+                <i class="fa fa-chevron-left"></i> 
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/QYZWYQR/2022/05/14/journal/2022/5/2022514/" rel="prev" title="">
+                 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name"></p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/QYZWYQR/archives/%20%7C%7C%20archive">
+              
+                  <span class="site-state-item-count">48</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#2022-5-13"><span class="nav-number">1.</span> <span class="nav-text">2022&#x2F;5&#x2F;13</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A4%A9%E6%B0%94-%E9%9B%A8"><span class="nav-number">1.1.</span> <span class="nav-text">天气: 雨</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9C%B0%E7%82%B9-%E5%B9%BC%E4%B8%93"><span class="nav-number">1.2.</span> <span class="nav-text">地点: 幼专</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">QYZWYQR</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/QYZWYQR/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/QYZWYQR/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/QYZWYQR/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/QYZWYQR/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/QYZWYQR/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/QYZWYQR/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/QYZWYQR/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/QYZWYQR/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/QYZWYQR/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/QYZWYQR/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/QYZWYQR/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
